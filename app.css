@@ -145,10 +145,14 @@ body {
 
 * {
   font-weight: 100;
-  font-family: "Felix Titling", sans-serif;
+  font-family: "Felix Titling", "Felix Titling";
   color: white;
 }
 
+@font-face {
+  font-family: "Felix Titling";
+  src: url("http://fonts.cdnfonts.com/css/felix-titling") format("truetype");
+}
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -396,6 +400,7 @@ a:hover {
   line-height: 1;
   letter-spacing: 5px;
   mix-blend-mode: difference;
+  font-family: "Felix Titling", "Felix Titling";
 }
 @media screen and (min-width: 1200px) {
   .main .set .title h1 {

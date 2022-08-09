@@ -2,8 +2,13 @@
 
 * {
     font-weight: 100;
-    font-family: 'Felix Titling', sans-serif;
+    font-family: 'Felix Titling', 'Felix Titling';
     color: white;
+}
+
+@font-face {
+    font-family: 'Felix Titling';
+    src:url('http://fonts.cdnfonts.com/css/felix-titling') format("truetype");
 }
 
 ::-webkit-scrollbar {
@@ -255,6 +260,7 @@ a {
                 @include rs(2.3rem);
                 letter-spacing: 5px;
                 mix-blend-mode:difference;
+                font-family: 'Felix Titling', 'Felix Titling';
 
                 @include desktop {
                     @include rs(3rem);
