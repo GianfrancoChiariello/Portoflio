@@ -401,6 +401,7 @@ a:hover {
   letter-spacing: 5px;
   mix-blend-mode: difference;
   font-family: "Felix Titling", "Felix Titling";
+  text-transform: uppercase;
 }
 @media screen and (min-width: 1200px) {
   .main .set .title h1 {

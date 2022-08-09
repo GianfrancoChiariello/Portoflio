@@ -261,6 +261,7 @@ a {
                 letter-spacing: 5px;
                 mix-blend-mode:difference;
                 font-family: 'Felix Titling', 'Felix Titling';
+                text-transform: uppercase;
 
                 @include desktop {
                     @include rs(3rem);
