@@ -10,8 +10,6 @@ button.addEventListener("click", ()=>{
     header.classList.toggle('active1')
 })
 
-
-
 let cursor = document.querySelector('.pointer')
 let clicked = "clicked"
 
@@ -23,5 +21,6 @@ let onMouseMove = (e) => {
     cursor.style.setProperty('--cursor-x', e.clientX + "px")
     cursor.style.setProperty('--cursor-y', e.clientY + "px")
 }
+
 
 addEventListener()
