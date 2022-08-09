@@ -230,7 +230,7 @@ a:hover {
 @media screen and (min-width: 1200px) {
   .background .boxed {
     animation: rotate 5s ease-in-out;
-    filter: blur(100px);
+    filter: blur(200px);
   }
 }
 .background .boxed .box1 {
