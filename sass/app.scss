@@ -12,6 +12,15 @@ body {
     cursor: none;
 }
 
+a {
+    cursor: none;
+    transition: color .5s;
+
+    &:hover {
+        color: rgba(0, 0, 0, 0.651);
+    }
+}
+
 .pointer {
     --size: 20px;
     position: fixed;
@@ -23,8 +32,9 @@ body {
     pointer-events: none;
     z-index: 5;
     will-change: transform;
-    border: 1px solid white;
+    border: 2px solid white;
     border-radius: 50%;
+    mix-blend-mode:difference;
 }
 
 .background {
@@ -312,6 +322,7 @@ body {
         
         @include desktop {
             padding: 0 0 0 3rem;
+            margin: 0 0 1rem;
         }
         
         @include flex(column,nowrap,center,center);
