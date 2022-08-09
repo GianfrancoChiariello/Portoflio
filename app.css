@@ -149,6 +149,22 @@ body {
   color: white;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(156, 156, 156);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 body {
   background-color: black;
   overflow-x: hidden;
@@ -436,6 +452,7 @@ a:hover {
     align-items: center;
     gap: 0;
     padding: 4rem 0.3rem;
+    margin: 0 0 0 1rem;
     border-radius: 2rem 0 0 2rem;
     width: 1vw;
   }
