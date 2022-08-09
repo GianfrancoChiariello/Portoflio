@@ -152,6 +152,22 @@ body {
 body {
   background-color: black;
   overflow-x: hidden;
+  cursor: none;
+}
+
+.pointer {
+  --size: 20px;
+  position: fixed;
+  width: var(--size);
+  height: var(--size);
+  top: calc(var(--size) / -2);
+  left: calc(var(--size) / -2);
+  transform: translate(var(--cursor-x, -100px), var(--cursor-y, -100px)) translateZ(0);
+  pointer-events: none;
+  z-index: 5;
+  will-change: transform;
+  border: 1px solid white;
+  border-radius: 50%;
 }
 
 .background {
