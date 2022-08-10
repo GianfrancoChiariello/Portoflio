@@ -320,6 +320,12 @@ a:hover {
     top: 10;
   }
 }
+@media screen and (min-width: 1200px) {
+  .header .logo img {
+    left: 20;
+    top: 20;
+  }
+}
 .header .button i {
   font-size: 1.5rem;
 }
@@ -346,7 +352,7 @@ a:hover {
   }
 }
 .header .nav .ul li {
-  padding: 1rem 0 0 0;
+  padding: 0.5rem 0 0 0;
 }
 .header .active {
   pointer-events: auto;
@@ -397,6 +403,11 @@ a:hover {
   margin: 10rem 0;
   text-align: center;
   position: relative;
+}
+@media screen and (min-width: 1200px) {
+  .main .set .title {
+    margin: 10rem 2.5rem 10rem 0;
+  }
 }
 .main .set .title h1 {
   font-size: calc(2vw + 2.3rem);
@@ -450,7 +461,7 @@ a:hover {
   background-color: white;
 }
 .main .set .sub-menu {
-  background-color: rgba(158, 158, 158, 0.884);
+  background-color: rgba(158, 158, 158, 0.548);
   display: none;
   transition: all 0.5s;
 }
@@ -465,6 +476,7 @@ a:hover {
     margin: 0 0 0 1rem;
     border-radius: 2rem 0 0 2rem;
     width: 1vw;
+    height: 10vh;
   }
   .main .set .sub-menu .redes {
     display: none;
@@ -482,6 +494,7 @@ a:hover {
   .main .set .sub-menu:hover {
     width: 4vw;
     transition: all 0.5s;
+    height: 10vh;
   }
 }
 .main .post-set {
@@ -499,7 +512,7 @@ a:hover {
 }
 @media screen and (min-width: 1200px) {
   .main .post-set {
-    padding: 0 0 0 3rem;
+    padding: 0 3rem 0 3rem;
     margin: 0 0 1rem;
   }
 }

@@ -181,6 +181,11 @@ a {
                 left: 10;
                 top: 10;
             }
+
+            @include desktop {
+                left: 20;
+                top: 20;
+            }
         }
     }
     
@@ -208,7 +213,7 @@ a {
         
         .ul{
             li{    
-                padding: 1rem 0 0 0;            
+                padding: .5rem 0 0 0;   
                 span{
                 }
             }
@@ -258,6 +263,10 @@ a {
             text-align: center;
             position: relative;
 
+            @include desktop {
+                margin: 10rem 2.5rem 10rem 0;
+            }
+
             h1{
                 @include rs(2.3rem);
                 letter-spacing: 5px;
@@ -305,7 +314,8 @@ a {
             }
         }
         .sub-menu{
-            background-color: rgba(158, 158, 158, 0.884);
+            background-color: rgba(158, 158, 158, 0.548);
+
 
             display: none;
             transition: all .5s;
@@ -316,6 +326,7 @@ a {
                 margin: 0 0 0 1rem;
                 border-radius: 2rem 0 0 2rem;
                 width: 1vw;
+                height: 10vh;
 
                 .redes {
                     display: none;
@@ -333,6 +344,7 @@ a {
                 &:hover {
                     width: 4vw;
                     transition: all .5s;
+                    height: 10vh;
                 }
             }
 
@@ -348,7 +360,7 @@ a {
         }
         
         @include desktop {
-            padding: 0 0 0 3rem;
+            padding: 0 3rem 0 3rem;
             margin: 0 0 1rem;
         }
         
