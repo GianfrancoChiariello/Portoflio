@@ -1,6 +1,14 @@
 let button = document.querySelector('.button')
 let nav = document.querySelector('.nav')
 let header = document.querySelector('.header')
+const parrafo = document.querySelectorAll('.parrafo')
+
+for (i=0; i<parrafo.length; i++) {
+    parrafo[i].addEventListener('click', function () {
+    this.classList.toggle('heightt')
+})
+}
+
 
 button.addEventListener("click", ()=>{
     nav.classList.toggle('active')
