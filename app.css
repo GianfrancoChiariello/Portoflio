@@ -817,16 +817,14 @@ a:hover {
   position: relative;
   width: 100%;
   height: 100vh;
-  padding: 3rem 0rem 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: rgb(128, 128, 128);
-  background: linear-gradient(180deg, rgba(128, 128, 128, 0) 2%, rgb(128, 128, 128) 100%);
+  padding: 3.5rem 2rem 2rem;
+  background: linear-gradient(180deg, rgba(96, 93, 96, 0) 0%, rgba(96, 93, 96, 0.7203256303) 11%, rgba(96, 93, 96, 0.950017507) 22%, rgb(96, 93, 96) 33%);
+}
+.section-three h1 {
+  color: black;
 }
 .section-three h2 {
-  width: 90%;
+  width: 100%;
   text-align: center;
   font-size: 1.8rem;
   letter-spacing: 1px;
@@ -834,6 +832,7 @@ a:hover {
 }
 .section-three h2::before {
   content: "";
+  width: 90%;
   height: 1px;
   background-color: white;
   position: absolute;
@@ -852,106 +851,235 @@ a:hover {
 .section-three .about-container {
   width: 100%;
   height: 100%;
-  padding: 5rem 0rem 0rem;
-  display: grid;
-  grid-template-rows: 1.5fr 0.5fr 1fr;
+  position: relative;
+  padding: 2rem 0 0;
+  background: linear-gradient(180deg, rgba(96, 93, 96, 0) 0%, rgba(96, 93, 96, 0.7203256303) 11%, rgba(96, 93, 96, 0.950017507) 22%, rgb(96, 93, 96) 33%);
+}
+@media screen and (min-width: 1200px) {
+  .section-three .about-container {
+    background: none;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: initial;
+    gap: 0;
+    margin: 0 auto;
+  }
+}
+.section-three .about-container .parrafo {
+  background-color: rgb(223, 221, 221);
+  overflow: hidden;
+  max-height: 7.5vh;
+  margin: 1rem;
+  padding: 0.2rem;
+  border-radius: 1.2rem;
+  position: relative;
+  transition: max-height 0.8s;
+}
+@media screen and (min-width: 1200px) {
+  .section-three .about-container .parrafo {
+    max-height: 100%;
+    background: none;
+    max-width: 27vw;
+  }
+}
+.section-three .about-container .parrafo p {
+  color: rgb(63, 63, 63);
+  padding: 0.5rem;
+}
+@media screen and (min-width: 1200px) {
+  .section-three .about-container .parrafo p {
+    color: white;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    line-height: 1.2rem;
+  }
+}
+.section-three .about-container .parrafo h1 {
+  position: relative;
+  text-align: center;
+  padding: 1rem 0 1.2rem;
+  opacity: 0.8;
+  font-size: calc(1vw + 0.9rem);
+  line-height: 1;
+}
+@media screen and (min-width: 1200px) {
+  .section-three .about-container .parrafo h1 {
+    color: white;
+    font-size: calc(1vw + 0.2rem);
+    line-height: 1;
+  }
+}
+.section-three .about-container .parrafo h1::before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: rgb(109, 109, 109);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@media screen and (min-width: 1200px) {
+  .section-three .about-container .parrafo h1::before {
+    display: none;
+  }
+}
+.section-three .about-container .parrafo span {
+  position: relative;
+}
+.section-three .about-container .parrafo i {
+  position: absolute;
+  top: 70%;
+  right: 0;
+  color: gray;
+}
+@media screen and (min-width: 1200px) {
+  .section-three .about-container .parrafo i {
+    display: none;
+  }
+}
+.section-three .about-container .heightt {
+  max-height: 100vh;
 }
 .section-three .about-container .top-div {
-  width: 75%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  margin: 0 auto;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
 }
-.section-three .about-container .top-div .box {
-  max-width: 25vw;
+@media screen and (min-width: 1200px) {
+  .section-three .about-container .top-div {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: initial;
+    gap: 0;
+    position: relative;
+    height: 40%;
+    width: 80%;
+    margin: auto;
+  }
 }
 .section-three .about-container .top-div .box-parrafo {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 0;
+  margin-top: 3rem;
+  order: 2;
 }
-.section-three .about-container .top-div .box-parrafo h1 {
-  text-align: center;
-  line-height: 4.5rem;
+@media screen and (min-width: 1200px) {
+  .section-three .about-container .top-div .box-parrafo {
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+  }
 }
 .section-three .about-container .top-div .box-parrafo2 {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 0;
+  order: 3;
 }
-.section-three .about-container .top-div .box-parrafo2 h1 {
-  line-height: 4.5rem;
+@media screen and (min-width: 1200px) {
+  .section-three .about-container .top-div .box-parrafo2 {
+    order: 2;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0;
+  }
 }
 .section-three .about-container .top-div .box-img {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
+  text-align: center;
+  order: 1;
+}
+@media screen and (min-width: 1200px) {
+  .section-three .about-container .top-div .box-img {
+    order: 2;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0;
+  }
+}
+.section-three .about-container .top-div .box-img img {
+  width: 30vw;
+}
+@media screen and (min-width: 1200px) {
+  .section-three .about-container .top-div .box-img img {
+    width: 10vw;
+  }
+}
+.section-three .about-container .top-div .box-img i {
+  margin: 2.5rem 0 0;
+  font-size: 2rem;
+  color: rgb(185, 185, 185);
+}
+@media screen and (min-width: 1200px) {
+  .section-three .about-container .top-div .box-img i {
+    display: none;
+  }
 }
 .section-three .about-container .text-slider {
-  width: 100%;
-  height: 100%;
+  display: none;
 }
-.section-three .about-container .text-slider .marquee-w {
-  position: relative;
-  display: block;
-  width: 100%;
-  height: 100%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  overflow: hidden;
-}
-.section-three .about-container .text-slider .marquee {
-  position: absolute;
-  display: block;
-  margin: auto auto;
-  white-space: nowrap;
-  overflow: hidden;
-  min-width: 100%;
-  height: 100%;
-}
-.section-three .about-container .text-slider .marquee span {
-  display: inline-block;
-  padding-left: 100%;
-  letter-spacing: 5px;
-  text-align: center;
-  white-space: nowrap;
-  min-width: 100%;
-  height: 100%;
-  line-height: 140px;
-  font-size: 80px;
-  animation: marquee 18s linear infinite;
-  text-transform: uppercase;
-}
-.section-three .about-container .text-slider .marquee2 span {
-  animation-delay: 9s;
-}
-@keyframes marquee {
-  0% {
-    transform: translate(0, 0);
+@media screen and (min-width: 1200px) {
+  .section-three .about-container .text-slider {
+    display: inline;
   }
-  100% {
-    transform: translate(-100%, 0);
+  .section-three .about-container .text-slider .marquee-w {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+  }
+  .section-three .about-container .text-slider .marquee {
+    position: absolute;
+    display: block;
+    margin: auto auto;
+    white-space: nowrap;
+    overflow: hidden;
+    min-width: 100%;
+    height: 100%;
+  }
+  .section-three .about-container .text-slider .marquee span {
+    display: inline-block;
+    padding-left: 100%;
+    text-align: center;
+    letter-spacing: 22px;
+    white-space: nowrap;
+    min-width: 100%;
+    height: 100%;
+    line-height: 140px;
+    font-size: 85px;
+    animation: marquee 20s linear infinite;
+  }
+  .section-three .about-container .text-slider .marquee2 span {
+    animation-delay: 10s;
+  }
+  @keyframes marquee {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(-100%, 0);
+    }
   }
 }
-.section-three .about-container .bottom-div {
-  width: 75%;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+@media screen and (min-width: 1200px) {
+  .section-three .about-container .bottom-div {
+    margin: auto;
+  }
 }
-.section-three .about-container .bottom-div .box-parrafo h1 {
-  text-align: center;
-  line-height: 4.5rem;
-}
-
-@media (max-width: 799px) {
-  .section-three {
-    display: none;
+@media screen and (min-width: 1200px) {
+  .section-three .about-container .bottom-div .box-parrafo {
+    height: 40%;
   }
 }
 
